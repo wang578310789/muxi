@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/fz.js"></script>
+    <link rel="stylesheet" href="css/1.css">
+    <link rel="stylesheet" href="css/3.css">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+<div class="header" id="head"></div>
+<div class="container">
+    <div class="content">
+        <img src="images/banner.jpg" alt="">
+        <img src="images/banner02.jpg" alt="">
+        <img src="images/banner01.jpg" alt="">
+    </div>
+    <div class="btn">
+        <button class="current"></button>
+        <button class="current"></button>
+        <button class="current"></button>
+
+    </div>
+</div>
+<script>
+ let btn = $(".btn button");   
+ for(let i=0;i<btn.length;i++){
+    btn[i].index = i;
+
+ }   
+ $(".btn button").click(function(){
+     $(this).addClass("current").siblings().removeClass("current");
+     console.log(this.index);
+     $(".content img").eq(this.index).fadeIn().siblings().fadeOut();
+
+ })
+</script>    
+<div class="col-12">
+<h1>企业精神</h1>
+<div class="row logo">
+<div class="col-3">
+<img src="images/pinpai.png" alt="">
+<h4>品质</h4>
+<p>品质是品牌的发展基石</p>
+<P>坚持好品质,必定铸就优秀品牌</P>
+</div>
+<div class="col-3">
+<img src="images/keji.png" alt="">
+<h4>科技</h4>
+<p>科技是品牌的助推力</p>
+<P>只有不断科技创新,才能不会被淘汰</P>
+</div>
+<div class="col-3">
+<img src="images/chengxin.png" alt="">
+<h4>诚信</h4>
+<p>诚信是品牌的防护盾</p>
+<P>诚信企业,放心品牌才能走得更长久</P>
+</div>
+<div class="col-3">
+<img src="images/gongying.png" alt="">
+<h4>共赢</h4>
+<p>共赢是品牌的生命力</p>
+<P>与客户共赢,与员工共赢与企业共赢</P>
+</div>
+</div>
+</div>
+<div class="col-12">
+<div class="radius"><h2>产品展示</h2></div>
+<div class="item row">
+<div class="col-4">
+<img src="images/item01.jpg" alt="">
+</div>
+<div class="col-4">
+<img src="images/item02.jpg" alt="">
+</div>
+<div class="col-4">
+<img src="images/item03.jpg" alt="">
+</div>
+<div class="col-4">
+<img src="images/item04.jpg" alt="">
+</div>
+<div class="col-4">
+<img src="images/item05.jpg" alt="">
+</div>
+<div class="col-4">
+<img src="images/item06.jpg" alt="">
+</div>
+</div>
+</div>
+<div id="erweima"></div>
+<div id="foot"></div>
+</body>
+</html>

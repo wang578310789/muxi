@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="../js/fz.js"></script>
+    <link rel="stylesheet" href="../css/1.css">
+    <link rel="stylesheet" href="../css/3.css">
+    <link rel="stylesheet" href="../css/base.css">
+</head>
+<body>
+    <div class="header" id="head"></div>
+<div class="container">
+    <div class="content">
+        <img src="../images/banner06.jpg" alt="">
+    </div>
+ <!--   <div class="btn">
+        <button class="current"></button>
+        <button class="current"></button>
+        <button class="current"></button>
+
+    </div>-->
+</div>
+<script>
+ let btn = $(".btn button");   
+ for(let i=0;i<btn.length;i++){
+    btn[i].index = i;
+
+ }   
+ $(".btn button").click(function(){
+     $(this).addClass("current").siblings().removeClass("current");
+     console.log(this.index);
+     $(".content img").eq(this.index).fadeIn().siblings().fadeOut();
+
+ })
+</script>    
+<div class="container-3">
+    <div class="xbt">
+        <a href="#">招商加盟</a>
+    </div>
+    <div class="zsjm">
+        <div class="zsjm-content">
+            <div class="zsjm-content-1">
+                <img src="../images/logo.ico" alt="">
+            </div>
+            <div class="zsjm-content-2">
+                <div class="zt-1">
+                    <a href="#">加盟条件</a>
+                </div>
+                <div class="zt-2">
+                    <a href="#">Condition of joining</a>
+                </div>
+            </div>
+            <div class="zsjm-content-3">
+                <ul>
+                <li>1.正常营业过了生存期；</li>
+                <li>2.经销商有强烈的发展企图心；</li>
+                <li>3.三年以上零售板材终端经验，最好在当地排名前三名，县级前两名为佳；</li>
+                <li>4.具有一定的经济实力和好的店面；</li>
+                <li>5.认可木兮品牌发展价值观；</li>
+                </ul>  
+            </div>
+           
+        </div>
+        <div class="border">
+        <div class="zsjm-content">
+            <div class="zsjm-content-1">
+                <img src="../images/process.png" alt="">
+            </div>
+            <div class="zsjm-content-2">
+                <div class="zt-1">
+                    <a href="#">加盟流程</a>
+                </div>
+                <div class="zt-2">
+                    <a href="#">Join process</a>
+                </div>
+            </div>
+            <div class="zsjm-content-3">
+                <ul>
+                    <li>加盟咨询</li>
+                    <li>填写加盟申请表</li>
+                    <li>加盟商资料调查</li>
+                    <li>店铺选址</li>
+                    <li>实地考察与评估</li>
+                    <li>公司审批</li>
+                    <li>交信誉保证金、签订特许经营合同</li>
+                    <li>招聘、培训营业员、标准店铺装修</li>
+                </ul>  
+            </div>
+        </div>
+        </div>
+        <div class="border">
+        <div class="zsjm-content">
+            <div class="zsjm-content-1">
+                <img src="../images/policy.png" alt="">
+            </div>
+            <div class="zsjm-content-2">
+                <div class="zt-1">
+                    <a href="#">加盟流程</a>
+                </div>
+                <div class="zt-2">
+                    <a href="#">Join process</a>
+                </div>
+            </div>
+            <div class="zsjm-content-3">
+                <ul>
+                    <li>加盟咨询</li>
+                    <li>填写加盟申请表</li>
+                    <li>加盟商资料调查</li>
+                    <li>店铺选址</li>
+                    <li>实地考察与评估</li>
+                    <li>公司审批</li>
+                    <li>交信誉保证金、签订特许经营合同</li>
+                    <li>招聘、培训营业员、标准店铺装修</li>
+                </ul>  
+            </div>
+        </div>
+        </div>
+        
+    </div>
+</div>
+<div id="erweima"></div>
+<div class="foot" id="foot"></div>
+</body>
+</html>

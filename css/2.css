@@ -1,0 +1,29 @@
+.content img:not(:first-child){
+    display: none;
+}
+.content img{
+    position:absolute;
+    width: 1349px;
+    height: 350px;
+}
+.btner{
+    display: flex;
+    position:absolute;
+    flex-direction: row;
+    margin-left: 660px;
+    margin-top: 330px;
+}
+.btner button{ 
+    width:15px;
+    height:15px;
+    border-radius: 50%;
+    border:2px solid #FFFFFF;
+    outline: none;
+    cursor: pointer;
+}
+.current{
+    color:#fff;
+}
+.current:hover{
+    color: #2DAE36;
+}

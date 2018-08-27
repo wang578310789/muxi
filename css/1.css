@@ -1,0 +1,87 @@
+*{margin: 0;padding: 0;}
+.container{
+    height:350px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.container img{
+    position:absolute;
+    
+    width: 100%;
+    
+}
+.btn{
+    position:absolute;
+    z-index: 100;
+    bottom: 10px;
+    left:50%;
+    transform: translateX(-50%)
+}
+.btn button{
+    width:15px;
+    height:15px;
+    border-radius: 50%;
+    border:2px solid #FFFFFF;
+    outline: none;
+    cursor: pointer;
+}
+.content img:not(:first-child){
+    display: none;
+}
+.current{
+    color:#fff;
+}
+.current:hover{
+    color: #2DAE36;
+}
+.col-3{
+    text-align: center;
+}
+.col-3 img{
+    width: 100px;
+}
+.col-12 h1{
+    text-align: center;
+}
+.logo{
+    width: 1100px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+.logo h4{
+    margin-top: 10px;
+    font-size: 20px;
+    color: #2DAE36;
+}
+.logo p{
+    margin-top: 10px;
+}
+.hot{
+    margin-top: 20px;
+}
+.radius{
+    width: 120px;
+    line-height: 40px;
+    background: #2DAE36;
+    border-radius: 20px 0 20px 0; 
+    margin-left: 125px;
+    text-align: center;
+}
+.radius h2{
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.item{
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid #2DAE36;
+
+}
+.item>.col-4 img{
+    width: 350px;
+    margin-top: 15px;
+}

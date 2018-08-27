@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="../js/fz.js"></script>
+    <link rel="stylesheet" href="../css/1.css">
+    <link rel="stylesheet" href="../css/3.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_800921_lp9iukzx14.css">
+</head>
+<body>
+    <div class="header" id="head"></div>
+<div class="container">
+    <div class="content">
+        <img src="../images/banner02.jpg" alt="">
+    </div>
+  <!--  <div class="btn">
+        <button class="current"></button>
+        <button class="current"></button>
+        <button class="current"></button>
+
+    </div>-->
+</div>
+<script>
+ let btn = $(".btn button");   
+ for(let i=0;i<btn.length;i++){
+    btn[i].index = i;
+
+ }   
+ $(".btn button").click(function(){
+     $(this).addClass("current").siblings().removeClass("current");
+     console.log(this.index);
+     $(".content img").eq(this.index).fadeIn().siblings().fadeOut();
+
+ })
+</script>    
+<div class="container-4">
+    <div class="xbt">
+        <a href="#">联系我们</a>
+    </div>
+    <div class="contact">
+        <div class="specific">
+            <div class="specific-box">
+            <div class="mode">
+                <div class="phone">
+                    <img src="../images/pon.PNG" alt="">
+                    <a href="#">027-83622296</a>
+                </div>
+                <div class="mailbox">
+                    <div>
+                        <p>
+                            <span><i class="iconfont">&#xe612;</i></span>
+                            <a href="#">13387576980</a>
+                        </p>
+                        
+                    </div>
+                    <div>
+                        <p>
+                            <span><i class="iconfont">&#xe623;</i></span>
+                            <a href="#">yt15yi@163.com</a>  
+                        </p>
+                        
+                    </div>
+                    <div>
+                        <p>
+                            <span><i class="iconfont">&#xe641;</i></span>
+                            <a href="#">汉西三路香江家居A12栋16号湖北营销中心</a>
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="map">
+                <iframe src="https://map.baidu.com/" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="erweima"></div>
+<div class="foot" id="foot"></div>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="../js/fz.js"></script>
+    <link rel="stylesheet" href="../css/1.css">
+    <link rel="stylesheet" href="../css/3.css">
+    <link rel="stylesheet" href="../css/base.css">
+</head>
+<body>
+    <div class="header" id="head"></div>
+<div class="container">
+    <div class="content">
+        <img src="../images/banner01.jpg" alt="">
+        <img src="../images/banner04.jpg" alt="">
+        <img src="../images/banner06.jpg" alt="">
+    </div>
+    <div class="btn">
+        <button class="current"></button>
+        <button class="current"></button>
+        <button class="current"></button>
+
+    </div>
+</div>
+<script>
+ let btn = $(".btn button");   
+ for(let i=0;i<btn.length;i++){
+    btn[i].index = i;
+
+ }   
+ $(".btn button").click(function(){
+     $(this).addClass("current").siblings().removeClass("current");
+     console.log(this.index);
+     $(".content img").eq(this.index).fadeIn().siblings().fadeOut();
+
+ })
+</script>    
+<div class="show">
+    <div class="product">
+        <div class="product-box">
+            <ul class="menu">
+                <li class="submenu">强化复合系列</li>
+                <li>高端水洗系列</li>
+                <li>立体拼花系列</li>
+                <li>多层实木系列</li>
+                <li>实木系列</li>
+            </ul>
+        </div>
+        <div class="show-product">
+            <div class="show-composite">
+              <div class="composite">
+                <div class="picture"><img src="../images/item01.jpg" alt=""></div>
+                <div class="picture"><img src="../images/item02.jpg" alt=""></div>
+                <div class="picture"><img src="../images/item03.jpg" alt=""></div>
+            </div>
+            <div class="composites">
+                <div class="picture"><img src="../images/item04.jpg" alt=""></div>
+                <div class="picture"><img src="../images/item05.jpg" alt=""></div>
+                <div class="picture"><img src="../images/item06.jpg" alt=""></div>
+            </div>  
+            </div> 
+            <div class="show-composite">
+                <div class="composite">
+                    <div class="picture"><img src="../images/item07.jpg" alt=""></div>
+                    <div class="picture"><img src="../images/item08.jpg" alt=""></div>
+                    <div class="picture"><img src="../images/item09.jpg" alt=""></div>
+                </div>
+                <div class="composites">
+                    <div class="picture"><img src="../images/item10.jpg" alt=""></div>
+                    <div class="picture"><img src="../images/item11.jpg" alt=""></div>
+                    <div class="picture"><img src="../images/item12.jpg" alt=""></div>
+                </div>  
+            </div> 
+            <div class="show-composite">
+                <div class="composite">
+                    <div class="picture"><img src="../images/item13.jpg" alt=""></div>
+                    <div class="picture"><img src="../images/item14.jpg" alt=""></div>
+                    <div class="picture"><img src="../images/item15.jpg" alt=""></div>
+                </div>
+                <div class="composites">
+                    <div class="picture"><img src="../images/item16.jpg" alt=""></div>
+                    <div class="picture"><img src="../images/item17.jpg" alt=""></div>
+                    <div class="picture"><img src="../images/item18.jpg" alt=""></div>
+                </div>  
+            </div> 
+            <div class="show-composite">
+                <div class="composite">
+                    <div class="picture"><img src="../images/item19.jpg" alt=""></div>
+                    <div class="picture"><img src="../images/item20.jpg" alt=""></div>
+                    <div class="picture"><img src="../images/item21.jpg" alt=""></div>
+                </div>
+                <div class="composites">
+                    <div class="picture"><img src="../images/item22.jpg" alt=""></div>
+                    <div class="picture"><img src="../images/item23.jpg" alt=""></div>
+                    <div class="picture"><img src="../images/item24.jpg" alt=""></div>
+                </div>  
+            </div> 
+            <div class="show-composite">
+                <div class="composite">
+                    <div class="picture"><img src="../images/item25.jpg" alt=""></div>
+                    <div class="picture"><img src="../images/item26.jpg" alt=""></div>
+                    <div class="picture"><img src="../images/item27.jpg" alt=""></div>
+                </div>
+                <div class="composites">
+                    <div class="picture"><img src="../images/item28.jpg" alt=""></div>
+                    <div class="picture"><img src="../images/item29.jpg" alt=""></div>
+                    <div class="picture"><img src="../images/item30.jpg" alt=""></div>
+                </div>  
+            </div> 
+        </div>
+    </div>
+</div>
+<div id="erweima"></div>
+<div class="foot" id="foot"></div>
+<script> 
+    $(function(){
+        $('.menu>li').click(function(){
+            $(this).addClass("submenu").siblings().removeClass("submenu")
+            console.log($(this).index())
+            $(".show-composite").eq($(this).index()).show(0).siblings().hide(0)
+        })
+    })
+</script>
+</body>
+</html>
