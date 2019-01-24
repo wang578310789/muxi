@@ -1,0 +1,46 @@
+*{margin: 0;padding: 0}
+#head{
+    width: 100%;
+}
+.container-fluid{
+    background: #F7F7F7;
+    width: 85%;
+    
+}
+@media (max-width:767px){
+    .head-1{
+        width: 100px;
+        height: 73px;
+        background: url("../images/logo.ico")no-repeat center center;
+    }
+}
+@media (min-width:768px){
+    .head-1{
+        width: 260px;
+        height: 73px;
+        background: url("../images/logo0.png")no-repeat center center;
+    }
+    .collapse{
+        float: right;
+    }
+}
+.navbar{
+    border: none;
+    margin-bottom: 0 !important;;
+}
+.cur{
+    border-bottom:2px solid #2AAD39;
+    color: #2AAD39;
+}
+.cur a{
+    color: #2AAD39 !important;
+    text-decoration: none;
+}
+.head-2 li a:hover{
+    text-decoration: none;
+    color: #2AAD39;
+}
+.head-2 li{cursor: pointer;}
+.navbar-nav > li > a{
+  line-height: 50px !important;
+}

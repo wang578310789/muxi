@@ -1,9 +1,0 @@
-$(function(){
-    $("#head").load("../fz_html/head.html")
-})
-$(function(){
-    $("#foot").load("../fz_html/foot.html")
-})
-$(function(){
-    $("#erweima").load("../fz_html/erweima.html")
-})
