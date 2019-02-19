@@ -1,0 +1,38 @@
+@media (max-width: 767px){
+    .way .way-left{
+        font-size: 14px;
+        line-height: 20px;
+        color: #333;
+        text-align: left;  
+        border-right: 0 ;      
+    }
+    .way{
+        padding: 20px 0;
+    }
+    .waymap{
+        height: 200px;
+    }
+}
+
+@media(min-width:768px){
+.way-left{
+    text-align: right;
+    line-height: 90px;
+    font-size:18px;
+    color: rgb(85, 85, 175);
+    border-right: 2px solid #2dae2d;
+}
+.way-right{
+    line-height: 25px;
+}
+.way{
+    padding: 50px;
+    
+}
+.waymap,iframe{
+    width: 100%;
+    border-top: 1px solid #2dae2d;
+    border-bottom: 1px solid #2dae2d;
+    height: 400px;
+}
+}

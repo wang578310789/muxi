@@ -1,0 +1,38 @@
+.ta-c{
+    text-align: center;
+}
+.title1{
+    margin: 50px 0;
+    font-size: 22px;
+}
+.pinzhi img{
+    width: 30%;
+}
+.pinzhi dt{
+    font-size: 22px;
+    color: #2dae2d;
+    line-height: 40px;
+}
+.pinzhi dd{
+    line-height: 30px;
+}
+.title2{
+    border-bottom: 1px solid #2dae2d;
+    margin-top: 30px;
+}
+.title2 p{
+    width: 120px;
+    height: 40px;
+    border-radius: 15px 0 15px 0;
+    background:#2dae2d;
+    color: #fff;
+    font-size: 16px;
+    line-height: 40px;
+    margin: 0;
+}
+.goods{
+    margin-top: 30px;
+}
+.goods img{
+   width: 100%;
+}
